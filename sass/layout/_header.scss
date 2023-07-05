@@ -1,0 +1,94 @@
+@use "../utils/mixins" as mxn;
+
+.top {
+  background: #000;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  .language {
+    a {
+      color: var(--white, #fff);
+      text-align: center;
+      font-size: 10px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      &:last-child {
+        color: rgba(255, 255, 255, 0.3);
+        text-align: center;
+        font-size: 10px;
+        font-family: "Montserra";
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.end {
+  background: var(--gray-6, #fafafa);
+  box-shadow: 0px 14px 64px -4px rgba(24, 39, 75, 0.12),
+    0px 8px 22px -6px rgba(24, 39, 75, 0.12);
+  .navbar {
+    a {
+      text-align: center;
+      color: var(--black, #0d0d0d);
+      font-size: 23px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%;
+      letter-spacing: 0.4px;
+    }
+    ul {
+      gap: 24px;
+      margin-left: 98px;
+      @media (max-width: 600px) {
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      li {
+      }
+      a {
+        color: #000;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Montserrat";
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: 0.1px;
+      }
+    }
+    .header__btns {
+      margin-right: 39px;
+      @media(max-width: 800px) {
+        margin-right: 0;
+   
+      }
+      a {
+        transition: .5s ease-in-out;
+        @include mxn.btn-primary;
+        @media(max-width: 800px) {
+          margin-bottom: 30px;
+        }
+      }
+      
+    }
+    img {
+      cursor: pointer;
+    }
+  }
+}
+.header__logo {
+  gap: 16px;
+  @media (min-width: 992px){
+    display: none;
+  }
+}
