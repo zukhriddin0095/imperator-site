@@ -1,0 +1,12 @@
+@use "functions" as func;
+@use "variables" as var;
+
+@mixin container($padding: 147) {
+  $mb-padding: 20;
+  max-width: func.container(1440, $padding, $mb-padding);
+  padding-left: $mb-padding + px;
+  padding-right: $mb-padding + px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
