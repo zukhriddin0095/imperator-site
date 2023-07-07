@@ -135,18 +135,25 @@
     .our-advantages {
       margin-top: 24px;
       .our-advantages_card {
+        width: 294px;
         position: relative;
         border-radius: 12px;
         overflow: hidden;
-        background: var(--tecxt-white, #fff);
+        background: var(--text-white, #fff);
         text-align: center;
         padding: 26px 64px;
         cursor: pointer;
         transition: 1s;
+        @media (max-width: 650px) {
+          width: 100%;
+        }
         &:hover {
           transform: scale(1.2);
           box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
           transition: 0.5s;
+          @media (max-width: 650px) {
+            transform: scale(0.9);
+          }
         }
         h5 {
           margin-top: 45px;
@@ -172,7 +179,6 @@
         &:hover::after {
           width: 1000px;
           height: 1000px;
-
           z-index: -1;
         }
       }
@@ -201,7 +207,7 @@
         padding: 13px;
         text-align: center;
         background: #fff;
-        border-radius: 0  0 12px 12px;
+        border-radius: 0 0 12px 12px;
         box-shadow: 0px 0px 98px 0px rgba(0, 0, 0, 0.05);
         h3 {
           text-align: left;
@@ -252,6 +258,105 @@
           line-height: 140%;
           letter-spacing: 0.75px;
           text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.show {
+  background: #f2f3f7;
+  padding-bottom: 245px;
+  .show__box {
+    .show__card {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      &:hover {
+        img {
+          transform: translateY(-100px);
+        }
+        .show__intro {
+          transform: translateY(0px);
+        }
+      }
+      img {
+        width: 100%;
+        transition: 0.5s;
+      }
+      .show__intro {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(100px);
+        padding: 33px 22px;
+        border-radius: 0px 0px 8px 8px;
+        background: var(--black, #0d0d0dc6);
+        transition: all 0.5s ease-in-out;
+
+        h3 {
+          color: var(--yellow, #ffc000);
+          font-family: "Montserrat";
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+}
+
+.apps {
+  background: radial-gradient(
+    1075.73% 141.42% at 0% 0%,
+    #0f0d2b 0%,
+    #0c0926 100%
+  );
+  @media (max-width: 1000px) {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .apps__wrapper {
+    .apps__aside {
+      img {
+        width: 100%;
+        transform: translateY(-200px);
+        @media (max-width: 1000px) {
+          transform: translateY(0px);
+        }
+      }
+    }
+    .apps__bside {
+      padding-top: 40px;
+      h3 {
+        color: var(--white, #fff);
+        font-family: "Montserrat";
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 0.25px;
+      }
+      p {
+        margin-top: 24px;
+        margin-bottom: 40px;
+        color: var(--white, #fff);
+        font-family: "Montserrat";
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.44px;
+      }
+      .google__apples {
+        
+        img {
+          margin-right: 30px;
+          transition: .5s;
+          @media (max-width: 1000px) {
+            margin-bottom: 30px;
+          }
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.2);
+          }     
         }
       }
     }
