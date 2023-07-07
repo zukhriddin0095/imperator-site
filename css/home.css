@@ -114,7 +114,7 @@ input:focus {
   background: var(--black-5, rgba(0, 0, 0, 0.05));
   color: var(--black, #0d0d0d);
   font-size: 16px;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -383,4 +383,77 @@ input:focus {
   width: 1000px;
   height: 1000px;
   z-index: -1;
+}
+
+.moneken {
+  background: #f2f3f7;
+  padding-bottom: 64px;
+}
+.moneken .moneken__card h5 {
+  margin-bottom: 32px;
+  color: #000;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+}
+.moneken .moneken__card .moneken__box img {
+  width: 100%;
+}
+.moneken .moneken__card .moneken__box .moneken__intro {
+  padding: 13px;
+  text-align: center;
+  background: #fff;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0px 0px 98px 0px rgba(0, 0, 0, 0.05);
+}
+.moneken .moneken__card .moneken__box .moneken__intro h3 {
+  text-align: left;
+  color: var(--black, #000);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+.moneken .moneken__card .moneken__box .moneken__intro p {
+  text-align: left;
+  color: var(--black, #000);
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+}
+.moneken .moneken__card .moneken__box .moneken__intro .moneken__derc {
+  padding-left: 13px;
+  margin-bottom: 16px;
+}
+.moneken .moneken__card .moneken__box .moneken__intro .moneken__derc img {
+  width: 98px;
+}
+.moneken .moneken__card .moneken__box .moneken__intro .moneken__derc h5 {
+  color: var(--black, #000);
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.moneken .moneken__card .moneken__box .moneken__intro a {
+  padding: 10px 24px;
+  border-radius: 6px;
+  background: var(--gold, #ffc000);
+  color: var(--black, #000);
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
 }
