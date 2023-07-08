@@ -267,6 +267,17 @@
 .show {
   background: #f2f3f7;
   padding-bottom: 245px;
+  h5 {
+    margin-bottom: 38px;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+  }
   .show__box {
     .show__card {
       position: relative;
@@ -346,18 +357,84 @@
         letter-spacing: 0.44px;
       }
       .google__apples {
-        
         img {
           margin-right: 30px;
-          transition: .5s;
+          transition: 0.5s;
           @media (max-width: 1000px) {
             margin-bottom: 30px;
           }
           cursor: pointer;
           &:hover {
             transform: scale(1.2);
-          }     
+          }
         }
+      }
+    }
+  }
+}
+
+.imperia {
+  .container {
+    .imperia__aside {
+      img {
+        width: 100%;
+      }
+    }
+    .imperia__bside {
+      padding-top: 60px;
+      padding-bottom: 109px;
+      h3 {
+        color: var(--black, #0d0d0d);
+        font-family: "Montserrat";
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 0.25px;
+      }
+      p {
+        margin-top: 24px;
+        margin-bottom: 32px;
+        color: #000;
+        font-family: "Montserrat";
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.44px;
+      }
+      a {
+        padding: 5px 15px;
+        border-radius: 6px;
+        background: var(--gold, #ffc000);
+        color: var(--black, #000);
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.sale {
+  height: 470px;
+  background: var(--yellow, #ffc000);
+  .container {
+    .sale__wrapper {
+      display: flex;
+      justify-content: center;
+      padding-top: 173px;
+      h3 {
+        max-width: 666px;
+        color: var(--black, #0d0d0d);
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 0.25px;
       }
     }
   }
